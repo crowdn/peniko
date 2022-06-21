@@ -1,0 +1,18 @@
+{
+  "name": "peniko",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "sh create-link.sh && tsc -w",
+    "build": "tsc",
+    "test": ""
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "pgYou",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

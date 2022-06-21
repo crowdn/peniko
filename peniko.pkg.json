@@ -1,0 +1,8 @@
+{
+  "name": "peniko",
+  "version": "0.0.1",
+  "main": "index.js",
+  "keywords": ["canvas"],
+  "author": "pgYou",
+  "license": "MIT"
+}
