@@ -24,4 +24,13 @@ export default class Rect {
   get bottom() {
     return this.y + this.height;
   }
+
+  serialize() {
+    const { x, y, width, height } = this;
+    return { x, y, width, height };
+  }
+  static create(data: { x: number; y: number; width: number; height: number }) {
+    const { x, y, width, height } = data;
+    return new Rect(x, y, width, height);
+  }
 }

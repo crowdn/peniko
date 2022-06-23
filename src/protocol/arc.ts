@@ -39,4 +39,25 @@ export default class Arc {
       this.anticlockwise,
     ];
   }
+  serialize() {
+    const { centre, radius, startAngle, endAngle, anticlockwise } = this;
+    return {
+      ...centre.serialize(),
+      radius,
+      startAngle,
+      endAngle,
+      anticlockwise,
+    };
+  }
+  static create(data: {
+    x: number;
+    y: number;
+    radius: number;
+    startAngle: number;
+    endAngle: number;
+    anticlockwise?: boolean;
+  }) {
+    const { x, y, radius, startAngle, endAngle, anticlockwise } = data;
+    return new Arc(x, y, radius, startAngle, endAngle, anticlockwise);
+  }
 }
