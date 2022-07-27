@@ -1,7 +1,8 @@
 {
   "name": "peniko",
   "version": "0.0.1",
-  "main": "index.ts",
+  "private": true,
+  "main": "index.js",
   "scripts": {
     "dev": "sh create-link.sh && tsc -w",
     "build": "tsc",
